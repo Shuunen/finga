@@ -1,0 +1,38 @@
+{
+  "author": "Romain Racamier-Lafon <romain.racamier@gmail.com>",
+  "bugs": "https://github.com/Shuunen/finga/issues",
+  "description": "Finger pointing, ish, cham cham cham - online game",
+  "devDependencies": {
+    "shuunen-stack": "0.6.2",
+    "shuutils": "4.4.0"
+  },
+  "files": [
+    "src"
+  ],
+  "homepage": "https://github.com/Shuunen/finga",
+  "keywords": [
+    "finger pointing",
+    "ish",
+    "cham cham cham",
+    "online",
+    "game"
+  ],
+  "license": "GPL-3.0",
+  "name": "@shuunen/finga",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shuunen/finga.git"
+  },
+  "scripts": {
+    "build": "stack build src/index.ts --out-dir public --minify",
+    "dev": "npm run build -- --dev",
+    "lint": "stack lint",
+    "postversion": "git push && git push --tags",
+    "preversion": "npm run ci",
+    "start": "npm run dev",
+    "test": "echo no tests yet",
+    "update": "stack update"
+  },
+  "version": "0.0.1"
+}
