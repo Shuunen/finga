@@ -17,7 +17,10 @@
 ## Thanks
 
 - [Boogaloo](https://fonts.google.com/specimen/Boogaloo): logo font
+- [Clker-Free-Vector-Images](https://pixabay.com/images/id-29723/): hand vector
 - [Favicon.io](https://favicon.io) : cool favicon generator
 - [Github](https://github.com) : for all their great work year after year, pushing OSS forward
 - [Netlify](https://netlify.com) : awesome company that offers free CI & hosting for OSS projects
 - [Shields.io](https://shields.io) : nice looking badges to be proud of
+
+![hand](public/hand.svg)
