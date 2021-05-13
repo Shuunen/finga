@@ -3,6 +3,7 @@
   "bugs": "https://github.com/Shuunen/finga/issues",
   "description": "Finger pointing, ish, cham cham cham - online game",
   "devDependencies": {
+    "handtrackjs": "0.1.5",
     "shuunen-stack": "0.6.2",
     "shuutils": "4.4.0"
   },
