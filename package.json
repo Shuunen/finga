@@ -4,7 +4,7 @@
   "description": "Finger pointing, ish, cham cham cham - online game",
   "devDependencies": {
     "shuunen-stack": "0.6.2",
-    "shuutils": "4.4.0"
+    "shuutils": "4.5.1"
   },
   "files": [
     "src"
