@@ -10,8 +10,6 @@
 ## Todo
 
 - [ ] demo gif
-- [ ] keyboard input
-- [ ] webcam input
 - [ ] p2p game room
 
 ## Thanks
