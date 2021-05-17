@@ -4,7 +4,8 @@
   "description": "Finger pointing, ish, cham cham cham - online game",
   "devDependencies": {
     "shuunen-stack": "0.6.2",
-    "shuutils": "4.5.1"
+    "shuutils": "*",
+    "xo": "*"
   },
   "files": [
     "src"
@@ -25,7 +26,7 @@
     "url": "https://github.com/Shuunen/finga.git"
   },
   "scripts": {
-    "build": "stack build src/index.ts --out-dir public --minify",
+    "build": "stack build src/index.ts --out-dir public --format iife --minify",
     "dev": "npm run build -- --dev",
     "lint": "stack lint",
     "postversion": "git push && git push --tags",

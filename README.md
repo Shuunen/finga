@@ -20,5 +20,6 @@
 - [Github](https://github.com) : for all their great work year after year, pushing OSS forward
 - [Netlify](https://netlify.com) : awesome company that offers free CI & hosting for OSS projects
 - [Shields.io](https://shields.io) : nice looking badges to be proud of
+- [Xo](https://github.com/xojs/xo) : super tool to find & fix problems
 
 ![hand](public/hand.svg)
