@@ -1,6 +1,6 @@
 import { image, on, throttle } from 'shuutils'
 
-export const hand = image('hand transition-transform w-80 max-w-xs mt-32 w-screen z-10', 'hand.svg', 'hand image')
+export const hand = image('hand transition-transform h-64 w-64 z-10', 'hand.svg', 'hand image')
 
 const onDirection = (direction = '') => {
   console.log('set direction', direction)
@@ -19,11 +19,12 @@ on('keydown', (event: KeyboardEvent) => {
 })
 
 on('click', (event: MouseEvent) => {
-  const { height, width } = document.body.getBoundingClientRect()
-  const left = event.x
-  const up = event.y
-  const right = width - left
-  const down = height - up
+  const { x, height, y, width } = hand.getBoundingClientRect()
+  const center = { x: Math.round(x + (height / 2)), y: Math.round(y + (width / 2)) }
+  const left = Math.round(event.x - center.x)
+  const up = Math.round(event.y - center.y)
+  const right = left * -1
+  const down = up * -1
   const closest = Math.min(right, down, left, up)
   if (right === closest) return onDirectionThrottled('right')
   if (down === closest) return onDirectionThrottled('down')
