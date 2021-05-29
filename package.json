@@ -3,8 +3,10 @@
   "bugs": "https://github.com/Shuunen/finga/issues",
   "description": "Finger pointing, ish, cham cham cham - online game",
   "devDependencies": {
+    "npm-run-all": "*",
     "shuunen-stack": "0.6.2",
     "shuutils": "*",
+    "tailbuild": "1.1.1",
     "xo": "*"
   },
   "files": [
@@ -26,8 +28,12 @@
     "url": "https://github.com/Shuunen/finga.git"
   },
   "scripts": {
-    "build": "stack build src/index.ts --out-dir public --format iife --minify",
-    "dev": "npm run build -- --dev",
+    "build": "npm run build:js && npm run build:css -- --production",
+    "build:js": "stack build src/index.ts --out-dir public --format iife --minify",
+    "build:css": "tailbuild public/index.css --files public/*.{js,html}",
+    "dev": "run-p dev:*",
+    "dev:css": "npm run build:css -- --watch",
+    "dev:js": "npm run build:js -- --dev",
     "lint": "stack lint",
     "postversion": "git push && git push --tags",
     "preversion": "npm run ci",
