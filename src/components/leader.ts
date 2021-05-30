@@ -1,9 +1,10 @@
-import { div, getRandomNumber, pickOne } from 'shuutils'
+import { div, emit, getRandomNumber, pickOne } from 'shuutils'
 import { _rotate } from '../utils'
 
-export const leader = div('leader text-7xl flex items-end mt-24 mb-12')
-const leftHand = div('left-hand transition-transform text-4xl', '👉')
-const rightHand = div('right-hand transition-transform text-4xl', '👉')
+export const leader = div('leader text-8xl flex items-end mt-12 mb-24')
+const handStyle = 'transition-transform text-6xl flex justify-center items-end h-8 w-12'
+const leftHand = div(handStyle, '👉')
+const rightHand = div(handStyle, '👉')
 const directions = ['up', 'right', 'down', 'left']
 const faces = [...'🙂😉🤪🤫🤔😑🤭🤨😏🙄😬😴🤤🤧🥴😵🤯🤠🥳😎🧐😮😲😱😖']
 const head = div('head', '')
@@ -12,6 +13,7 @@ const act = () => {
   const direction = pickOne(directions)
   _rotate(leftHand, direction)
   _rotate(rightHand, direction)
+  emit('leader', direction)
   setTimeout(act, getRandomNumber(1, 3) * 1000)
 }
 act()
