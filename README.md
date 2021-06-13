@@ -21,6 +21,5 @@
 - [Netlify](https://netlify.com) : awesome company that offers free CI & hosting for OSS projects
 - [Npm-run-all](https://github.com/mysticatea/npm-run-all) : to keep my npm scripts clean & readable
 - [Shields.io](https://shields.io) : nice looking badges to be proud of
-- [Xo](https://github.com/xojs/xo) : super tool to find & fix problems
 
 ![hand](public/hand.svg)

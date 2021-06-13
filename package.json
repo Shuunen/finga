@@ -4,10 +4,9 @@
   "description": "Finger pointing, ish, cham cham cham - online game",
   "devDependencies": {
     "npm-run-all": "*",
-    "shuunen-stack": "0.6.2",
+    "shuunen-stack": "0.9.5",
     "shuutils": "*",
-    "tailbuild": "1.1.1",
-    "xo": "*"
+    "tailbuild": "1.1.1"
   },
   "files": [
     "src"
@@ -31,6 +30,7 @@
     "build": "npm run build:js && npm run build:css -- --production",
     "build:js": "stack build src/index.ts --out-dir public --format iife --minify",
     "build:css": "tailbuild public/index.css --files public/*.{js,html}",
+    "ci": "run-s build lint test",
     "dev": "run-p dev:*",
     "dev:css": "npm run build:css -- --watch",
     "dev:js": "npm run build:js -- --dev",

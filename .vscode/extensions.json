@@ -1,7 +1,7 @@
 {
   "recommendations": [
     "bradlc.vscode-tailwindcss",
-    "samverschueren.linter-xo",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "dbaeumer.vscode-eslint"
   ]
 }
