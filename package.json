@@ -5,10 +5,11 @@
   "devDependencies": {
     "npm-run-all": "*",
     "shuunen-stack": "0.9.6",
-    "shuutils": "*",
-    "tailbuild": "1.1.1"
+    "shuutils": "4.6.1",
+    "tailwindcss": "2.2.2"
   },
   "files": [
+    "public",
     "src"
   ],
   "homepage": "https://github.com/Shuunen/finga",
@@ -27,13 +28,11 @@
     "url": "https://github.com/Shuunen/finga.git"
   },
   "scripts": {
-    "build": "npm run build:js && npm run build:css -- --production",
-    "build:js": "stack build src/index.ts --out-dir public --format iife --minify",
-    "build:css": "tailbuild public/index.css --files public/*.{js,html}",
+    "build": "run-p \"build:* -- --minify\"",
+    "build:css": "tailwindcss --input src/styles.css --output public/index.css",
+    "build:js": "stack build src/index.ts --out-dir public --format iife",
     "ci": "run-s build lint test",
-    "dev": "run-p dev:*",
-    "dev:css": "npm run build:css -- --watch",
-    "dev:js": "npm run build:js -- --dev",
+    "dev": "run-p \"build:* -- --watch --dev\"",
     "lint": "stack lint",
     "postversion": "git push && git push --tags",
     "preversion": "npm run ci",
