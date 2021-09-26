@@ -6,7 +6,7 @@
     "npm-run-all": "*",
     "shuunen-stack": "0.12.1",
     "shuutils": "4.8.1",
-    "tailwindcss": "2.2.15"
+    "tailwindcss": "2.2.16"
   },
   "files": [
     "public",
