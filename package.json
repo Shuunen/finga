@@ -5,8 +5,8 @@
   "devDependencies": {
     "npm-run-all": "*",
     "shuunen-stack": "0.14.0",
-    "shuutils": "5.6.3",
-    "tailwindcss": "3.1.6"
+    "shuutils": "5.6",
+    "tailwindcss": "3"
   },
   "files": [
     "public",
