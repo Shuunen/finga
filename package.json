@@ -4,7 +4,7 @@
   "description": "Finger pointing, ish, cham cham cham - online game",
   "devDependencies": {
     "npm-run-all": "*",
-    "shuunen-stack": "0.14.0",
+    "shuunen-stack": "0.14",
     "shuutils": "6.1",
     "tailwindcss": "3"
   },
