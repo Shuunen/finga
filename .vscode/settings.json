@@ -2,5 +2,10 @@
   "cSpell.words": [
     "Finga",
     "tailbuild"
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#42426e",
+    "titleBar.activeBackground": "#25268d",
+    "titleBar.activeForeground": "#FAFAFF"
+  }
 }
