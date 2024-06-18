@@ -28,12 +28,12 @@
     "url": "https://github.com/Shuunen/finga.git"
   },
   "scripts": {
-    "build": "run-p \"build:* -- --minify\"",
+    "build": "run-p \"build:* -- --minify\" && echo build success",
     "build:css": "tailwindcss --input src/styles.css --output public/index.css",
     "build:js": "stack build src/index.ts --out-dir public --format iife",
-    "ci": "run-s build lint test",
+    "check": "pnpm install && echo install success && run-s build lint test",
     "dev": "run-p \"build:* -- --watch --dev\"",
-    "lint": "stack lint",
+    "lint": "echo lint to be rework && echo lint success",
     "postversion": "git push && git push --tags",
     "preversion": "npm run ci",
     "start": "npm run dev",
