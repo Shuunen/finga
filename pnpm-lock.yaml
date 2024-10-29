@@ -12,8 +12,8 @@ devDependencies:
     specifier: '0.14'
     version: 0.14.0(autoprefixer@10.4.19)(less@4.2.0)(sass@1.77.6)(stylus@0.63.0)
   shuutils:
-    specifier: '9.0'
-    version: 9.0.0
+    specifier: '10.1'
+    version: 10.1.0
   tailwindcss:
     specifier: '3'
     version: 3.4.4
@@ -3894,17 +3894,17 @@ packages:
       - supports-color
     dev: true
 
+  /shuutils@10.1.0:
+    resolution: {integrity: sha512-Q+8PaUIik4W3bEE2xtDMZvYC7y4B8mnh3x7cneXPJmry0esVRir+hSZHh5Kjh6rtV0pYj+eKtAXBxJ8LDqPZhA==}
+    hasBin: true
+    dependencies:
+      tiny-glob: 0.2.9
+    dev: true
+
   /shuutils@4.9.0:
     resolution: {integrity: sha512-eoWrW9je7teWH5Uvj3wTd7ah8IB7I5IP6o48t2JNjGyvj69y+hqrCtXA7c92/BZrp38Sh9q+V5jz2VW5IUL6kQ==}
     dependencies:
       dlv: 1.1.3
-    dev: true
-
-  /shuutils@9.0.0:
-    resolution: {integrity: sha512-MfWfhceiekvjZV5PFF3CTWjVBBNOPaREQZ72cBPt3W2WFJ8OMorHuRgaCgqdl7UGQzA651u0xNH3ZZAfm4t+sA==}
-    hasBin: true
-    dependencies:
-      tiny-glob: 0.2.9
     dev: true
 
   /side-channel@1.0.6:
